@@ -1,5 +1,5 @@
 import unittest
-from bagels.bagels import *
+from bagels import *
 
 
 def find_all_occurrences(string, char):
@@ -26,7 +26,7 @@ class TestBagels(unittest.TestCase):
             self.assertEqual(find_all_occurrences(secret_num, num), 1)
 
     def test_get_clues_bagels(self):
-        output = getClues("246", "123")
+        output = getClues("456", "123")
         self.assertEqual(output, "Bagels")
 
     def test_get_clues_fermi(self):
